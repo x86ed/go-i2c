@@ -11,4 +11,4 @@ import (
 // in the package by changing last parameter value
 // (comment/uncomment corresponding lines).
 var logLevel, err = strconv.Atoi(os.Getenv("GO_I2C_LOG"))
-var lg = logger.NewPackageLogger("i2c", logLevel)
+var lg = logger.NewPackageLogger("i2c", logger.LogLevel(logLevel))
